@@ -1,26 +1,30 @@
 <script>
+import { ref } from 'vue';
+// This is a Vue 3 component that demonstrates the use of reactive properties and event handling.
+// It uses the Composition API to define a setup function that initializes data and methods.
 export default {
-  data() {
-    return {
-      HelloWorld: 'Hello World',
-      status: 'pending',
-      tasks: ["task1", "task2", "task3"],
-      link: "https://vuejs.org",
-    };
-  },
-      methods: {
-      toggleStatus() {
-         if (this.status === "active") {
-          this.status = "pending";
-      } else if (this.status === "pending") {
-          this.status = "inactive";
-      } else {
-          this.status = "active";        
-      }
-    }
-  },
-};
+  setup() {
+    const HelloWorld = ref('Hello World');
+    let status = ref('pending'); // Changed to let
+    const tasks = ref(["task1", "task2", "task3"]);
 
+    const toggleStatus = () => {
+      if (status.value === 'active') {
+        status.value = 'pending';
+      } else if (status.value === 'pending') {
+        status.value = 'inactive';
+      } else {
+        status.value = 'active';
+      }
+    };
+    return {
+      HelloWorld,
+      status,
+      tasks,
+      toggleStatus
+    };
+  }
+};
 </script>
 
 <template>
@@ -33,10 +37,5 @@ export default {
       {{ task }}
     </li>
   </ul>
-  <p>
-    <a v-bind:href="link">Link 1</a>
-    // or more simply
-    <a :href="link">Link 2</a> 
-  </p>
-  <button v-on:click="toggleStatus">Toggle Paragraph</button>
+  <button @click="toggleStatus">Toggle Paragraph</button>
 </template>
