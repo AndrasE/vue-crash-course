@@ -1,9 +1,8 @@
-<script>
+<!-- This is a Vue 3 component that demonstrates the use of reactive properties and event handling in the more concise commonly used Composition API style. Setup moved to the script tag, and due to this both the export and return can be removed. -->
+
+<script setup>
 import { ref } from 'vue';
-// This is a Vue 3 component that demonstrates the use of reactive properties and event handling.
-// It uses the Composition API to define a setup function that initializes data and methods.
-export default {
-  setup() {
+
     const HelloWorld = ref('Hello World');
     let status = ref('pending'); // Changed to let
     const tasks = ref(["task1", "task2", "task3"]);
@@ -17,14 +16,7 @@ export default {
         status.value = 'active';
       }
     };
-    return {
-      HelloWorld,
-      status,
-      tasks,
-      toggleStatus
-    };
-  }
-};
+
 </script>
 
 <template>

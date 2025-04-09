@@ -1,3 +1,11 @@
+<!-- This is a Vue.js component that uses the Options API to manage state and render a simple UI.
+It demonstrates the use of data properties, computed properties, and methods to handle user interactions.
+The component displays a greeting message, a status message based on the current state, and a list of tasks.
+It also includes a button to toggle the status between "active", "pending", and "inactive".
+The component uses Vue's template syntax to bind data and handle events.
+It also includes a link that demonstrates how to bind attributes dynamically.
+The component is structured using the Options API (Vue 3 encourages Composition API as the future) -->
+
 <script>
 export default {
   data() {
