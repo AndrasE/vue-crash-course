@@ -6,7 +6,7 @@ import vueDevTools from "vite-plugin-vue-devtools";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue(), vueDevTools()],
+  plugins: [vue(), vueDevTools()], // Combined all plugins into one array
   server: {
     port: 3000, // Set the port to 3000
     open: true, // Open the browser when the server starts
