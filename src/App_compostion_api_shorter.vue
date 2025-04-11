@@ -17,7 +17,6 @@ const toggleStatus = () => {
   } else {
     status.value = 'active';
   }
-}
 };
 
 const addTask = () => {
