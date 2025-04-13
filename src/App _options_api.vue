@@ -6,7 +6,7 @@ The component uses Vue's template syntax to bind data and handle events.
 It also includes a link that demonstrates how to bind attributes dynamically.
 The component is structured using the Options API (Vue 3 encourages Composition API as the future) -->
 
-<script>
+<script lang="ts">
 export default {
   data() {
     return {
@@ -16,14 +16,14 @@ export default {
       link: "https://vuejs.org",
     };
   },
-      methods: {
-      toggleStatus() {
-         if (this.status === "active") {
-          this.status = "pending";
+  methods: {
+    toggleStatus() {
+      if (this.status === "active") {
+        this.status = "pending";
       } else if (this.status === "pending") {
-          this.status = "inactive";
+        this.status = "inactive";
       } else {
-          this.status = "active";        
+        this.status = "active";
       }
     }
   },
@@ -34,7 +34,7 @@ export default {
 <template>
   <h1>{{ HelloWorld }}</h1>
   <p v-if="status === 'active'">User is active</p>
-  <p v-else-if="status === 'pending'">User is pending</p> 
+  <p v-else-if="status === 'pending'">User is pending</p>
   <p v-else>User is inactive</p>
   <ul>
     <li v-for="(task, index) in tasks" :key="index">
@@ -44,7 +44,7 @@ export default {
   <p>
     <a v-bind:href="link">Link 1</a>
     // or more simply
-    <a :href="link">Link 2</a> 
+    <a :href="link">Link 2</a>
   </p>
   <button v-on:click="toggleStatus">Toggle Paragraph</button>
 </template>
