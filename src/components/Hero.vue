@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
 
 defineProps({
     title: {
@@ -12,7 +11,6 @@ defineProps({
     },
 });
 </script>
-
 
 <template>
     <section class="bg-green-700 py-20 mb-4">
