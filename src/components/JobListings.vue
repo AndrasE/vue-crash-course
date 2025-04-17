@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import jobData from '../assets/jobs.json';
 import JobListing from './JobListing.vue';
 import { RouterLink } from 'vue-router';
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
 
 defineProps({
     limit: Number,
@@ -12,8 +12,17 @@ defineProps({
     },
 })
 
-const jobs = ref(jobData);
+const jobs = ref([]);
 console.log(jobData);
+
+onMounted(async () => {
+    try {
+        const response = await axios.get('https://localhost:5000/jobs'); // Replace with your API endpoint
+        jobs.value = response.data;
+    } catch (error) {
+        console.error('Error fetching jobs:', error);
+    }
+})
 
 </script>
 
