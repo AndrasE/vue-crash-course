@@ -83,48 +83,7 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "21eb",
-      "title": "Andras Egyed",
-      "type": "Full-Time",
-      "description": "asdasd",
-      "salary": "Under $50K",
-      "location": "asdasd",
-      "company": {
-        "name": "asd",
-        "description": "asd",
-        "contactEmail": "rohadtsajt@gmail.com",
-        "contactPhone": "07784834222"
-      }
-    },
-    {
-      "id": "2121",
-      "title": "asdasd",
-      "type": "Full-Time",
-      "description": "asdasdasd",
-      "salary": "Under $50K",
-      "location": "asdasdasd",
-      "company": {
-        "name": "asdasdasd",
-        "description": "asdasdasd",
-        "contactEmail": "egyeand@gmail.com",
-        "contactPhone": "07784834222"
-      }
-    },
-    {
-      "id": "f891",
-      "title": "asdasda",
-      "type": "Full-Time",
-      "description": "sdasdasdasd",
-      "salary": "Under $50K",
-      "location": "asdasdas",
-      "company": {
-        "name": "asdasd",
-        "description": "asdasd",
-        "contactEmail": "egyeand@gmail.com",
-        "contactPhone": "asd333"
-      }
     }
+   
   ]
 }

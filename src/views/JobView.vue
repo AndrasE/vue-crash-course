@@ -48,7 +48,6 @@ const deleteJob = async () => {
     }
 }
 
-
 onMounted(async () => {
     try {
         const response = await axios.get(`/api/jobs/${jobId}`);
