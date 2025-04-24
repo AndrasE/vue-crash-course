@@ -1,33 +1,80 @@
-# vue tutorial
+<h3 align="center">
+  <a href="https://github.com/bradtraversy/vue-crash-2024" target="_blank" rel="noopener noreferrer">
+  <img src="" width="190px">
+  </a>
+<br/>
+  
+Vue tutorial
 
-This template should help get you started developing with Vue 3 in Vite.
+</h3>
 
-## Recommended IDE Setup
+## Hi there 👋
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+It was a cource on **[YT](https://youtu.be/VeNfHj6MhgA?si=ahxa_dB8vwd6I9k6)** created by [Traversy Media](https://github.com/bradtraversy).
 
-## Type Support for `.vue` Imports in TS
+### Key studies 📚
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+-Vue basics: Components, props, event handling, and reactivity (ref, reactive, v-model)
 
-## Customize configuration
+-Routing & navigation: Using Vue Router s
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+-State management: Centralizing job application data (with Pinia or Vuex)
 
-## Project Setup
+-API integration: Fetching data with Axios and handling async data (mock api using json-server)
 
-```sh
-npm install
+
+
+👉 For more in-depth notes, check out **[my Vue.js notes](https://github.com/AndrasE/vue-tutorial/blob/main/src/justSomeVueJS.pdf)**.
+
+## Run the REST API Project 🚀
+
+Clone the Repository:
+
+`
+$ git clone https://github.com/AndrasE/TS-Bootcamp
+`
+
+`
+$ cd PROJECTNAME/rest-api
+`
+
+Install Dependencies:
+
+`
+$ npm install
+`
+
+Database Setup: Create a SQL database (I used Render, free for two weeks, after need to create a new one).
+
+Environment Configuration: Create a .env file in the project root and add your credentials:
+
+```env
+NODE_ENV=development // Keep it as it is
+#PORT = 3000 // Keep it as it is
+LOGGER_LEVEL=debug // Keep it as it is
+DB_HOST=Render
+DB_PORT= Render
+DB_USERNAME=Render
+DB_PASSWORD=Render
+DB_NAME=Render
+JWT_SECRET=create-a-strong-secret-token
 ```
 
-### Compile and Hot-Reload for Development
+Serving the app:
 
-```sh
+`
 npm run dev
-```
+`
 
-### Type-Check, Compile and Minify for Production
+Obtaining a JWT Key:
 
-```sh
-npm run build
-```
+`
+curl -X POST http://localhost:3000/api/login -H "Content-Type: application/json" -d '{"email": "test@angular-university.io", "password": "test"}'
+`
+
+Making Authenticated Requests
+
+`
+curl -X GET http://localhost:3000/api/courses \
+-H "Authorization: your_jwt_key_here""
+`
