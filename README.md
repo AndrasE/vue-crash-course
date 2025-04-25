@@ -1,6 +1,6 @@
 <h3 align="center">
   <a href="https://github.com/bradtraversy/vue-crash-2024" target="_blank" rel="noopener noreferrer">
-  <img src="https://github.com/AndrasE/raw-readme/blob/9709321e3386b91dd1164054d68c72fcc59cecaa/logo/vue-crash-readme-img.png" width="170px">
+  <img src="https://github.com/AndrasE/raw-readme/blob/9709321e3386b91dd1164054d68c72fcc59cecaa/logo/vue-crash-readme-img.png" width="190px">
   </a>
 <br/>
   
