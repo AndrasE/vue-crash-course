@@ -4,7 +4,7 @@
   </a>
 <br/>
   
-Vue crash course
+
 
 </h3>
 
