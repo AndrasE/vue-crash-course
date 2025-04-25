@@ -1,10 +1,10 @@
 <h3 align="center">
   <a href="https://github.com/bradtraversy/vue-crash-2024" target="_blank" rel="noopener noreferrer">
-  <img src="" width="190px">
+  <img src="https://github.com/AndrasE/raw-readme/blob/9709321e3386b91dd1164054d68c72fcc59cecaa/logo/vue-crash-readme-img.png" width="170px">
   </a>
 <br/>
   
-Vue tutorial
+Vue crash course
 
 </h3>
 
@@ -23,7 +23,7 @@ It was a cource on **[YT](https://youtu.be/VeNfHj6MhgA?si=ahxa_dB8vwd6I9k6)** cr
 
 👉 For more in-depth notes, check out **[my Vue.js notes](https://github.com/AndrasE/vue-tutorial/blob/main/src/justSomeVueJS.pdf)**.
 
-## Run the REST API Project 🚀
+## Run the Project 🚀
 
 Clone the Repository:
 
